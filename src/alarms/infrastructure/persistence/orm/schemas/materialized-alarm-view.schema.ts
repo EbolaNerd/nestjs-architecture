@@ -1,5 +1,6 @@
-import { Prop, SchemaFactory, raw } from '@nestjs/mongoose';
+import { Prop, Schema, SchemaFactory, raw } from '@nestjs/mongoose';
 
+@Schema()
 export class MaterializedAlarmView {
   @Prop({ unique: true, index: true })
   id: string;
